@@ -1,0 +1,33 @@
+zerar();
+var salM = 0;
+var salH = 0;
+function inicio(){
+    var cont = 1
+while(resp != 'n'){
+  var sexo = prompt('Qual o seu sexo?[Masculino/Feminino]')
+  var salario = Number(prompt('Qual o salario?'))
+
+
+  if(sexo == 'Feminino' || sexo =='feminino'){
+    salM = salM + salario
+  }
+  if(sexo == 'masculino' || sexo == 'Masculino'){
+    salH = salH + salario
+  } 
+  var resp = prompt(`Voce quer continuar? [S/N]`)
+  console.log(sexo,salario)
+    console.log(`Salario homem ${salH}`)
+    console.log(`salario muie ${salM}`)
+    cont++
+    }
+}
+function resultado(){
+    var res = document.getElementById('res')
+    res.innerHTML += `O valor total pago as mulheres é ${salM.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}<br>`
+    res.innerHTML += `O valor total pago aos Homens é ${salH.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`
+}
+function zerar(){
+    res.innerHTML = '';
+    salH = 0;
+    salM = 0;
+}
