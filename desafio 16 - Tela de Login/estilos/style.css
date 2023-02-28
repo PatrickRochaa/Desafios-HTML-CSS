@@ -101,7 +101,7 @@ form > div.campo{
     height: 100%;
     border:none;
     width: calc(100% - 45px);
-    transform: translateY(-9px);
+    transform: translateY(-10px);
 
 }
 
