@@ -23,6 +23,15 @@
         float: right;
         width: 70%;
     }
+
+    form > div.campo{
+        height: 45px;
+    }
+
+    div.campo > input {        
+        transform: translateY(-10px);
+    
+    }
 }
 
 /*Configuração para telas Grandes */ 
@@ -55,12 +64,19 @@
         text-align: center;
         margin-top: 10px;
         margin-bottom: 10px;
-    }
-
-   
+    }   
 
     div#formulario > P {
         font-size: 1.2em;
         margin:20px 0px;
+    }
+
+    form > div.campo{
+        height: 45px;
+    }
+
+    div.campo > input {        
+        transform: translateY(-10px);
+    
     }
 }

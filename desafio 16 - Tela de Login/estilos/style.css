@@ -81,11 +81,13 @@ form  input[type=submit] {
 
 form > div.campo{
     background-color: #5f2c82;
+    border: 3px solid #5f2c82;
     display: block;
     border-radius: 8px;
     height: 40px;
     margin:5px 0px;
 }
+
  span#icon{
     color: whitesmoke;
     font-size: 2em;
@@ -101,17 +103,10 @@ form > div.campo{
     height: 100%;
     border:none;
     width: calc(100% - 45px);
-    transform: translateY(-10px);
+    transform: translateY(-13px);
 
 }
 
-div.campo > input:focus-within{
-    background-color: white;
-}
-
-div.campo > input::placeholder{
-    color:black;
-}
 form  input[type=submit]:hover {
     background-color: #2d615f;
 }
@@ -141,4 +136,12 @@ span#email{
     font-size: 1.2em;
     vertical-align: middle;
 
+}
+
+div.campo > input:focus-within{
+    background-color: white;
+}
+
+div.campo > input::placeholder{
+    color:black;
 }
